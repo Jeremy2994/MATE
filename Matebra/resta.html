@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="icon" type="icon/jpg" href="Img/MATEBRA.jpg">
+    <title>Resta / Juega</title>
+</head>
+<body   style="background-color: #C2C1C1;">
+
+
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!--1er Div--> <div class="container-fluid">
+            <a class="navbar-brand" href="Inicio.html" class="logo" target="_self">MATEBRA</a><img src="Img/MATEBRA.jpg" alt="Logo MATEBRA" width="40" height="40">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--2do Div--> <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Inicio.html" target="_self"> ㅤINICIO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="MisionVision.html" target="_self"> ㅤMISIÓN </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="MisionVision.html" target="_self"> ㅤVISIÓN </a>
+                      </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ㅤㅤAPRENDE A: </a>
+                            <ul class="dropdown-menu" arial-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="suma.html">SUMAR</a></li>
+                              <li><a class="dropdown-item" href="resta.html">RESTAR</a></li>
+                              <li><a class="dropdown-item" href="multi.html">MULTIPLICAR</a></li>
+                              <li><a class="dropdown-item" href="divi.html">DIVIDIR</a></li>
+                          </ul>
+                    </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php" tabindex="-1" aria-disabled="true">ㅤㅤㅤㅤ¿TIENES UNA CUENTA?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php" tabindex="-1" aria-disabled="true">ㅤㅤㅤㅤCIERRA SESIÓNㅤㅤ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Búsqueda</button>
+                    </form>
+
+            <!--2do Div--> </div>
+        <!--1er Div--> </div>
+    </nav>
+</nav>
+
+<!------------------------->
+<h1>Juego de Resta</h1>
+<p ><h4>La resta es la acción de sacar, quitar  o reducir algo de un todo, es una de las operaciones básicas de las matemáticas</h4>
+    <h4>Para ello siempre debe de haber un mínimo de 2 elementos, el orden de los valores en la resta si importan ya que depende el resultado</h4><br>
+<h2>1 - 1 = 0</h2><br>
+<h4>En este ejemplo observamos como al restar 1 - 1 nos da 0, esto es por que se reducen los dos numeros 1, y se forma el numero 0 </h4><br>
+
+<h2>2 - 4 = -2</h2><br>
+<h4>Este otro ejemplo podemos observar como 2 - 4 nos da -2, esto es por que el 4 tiene signo negativo y es de mayor valor que el 2</h4><br>
+
+<h1>¡¡PON EN PRÁCTICA TUS CONOCIMIENTOS Y JUEGA!!</h1>
+</p>
+<div class="container">
+    <div class="izquierdo">
+        <div class="container-operacion">
+            <span id="resta">9 - 2 =</span>
+            <span class="resultado" id="resultado">7</span>
+        </div>
+        <span id="msj" class="msj">¡Excelente!</span>
+    </div>
+    <div class="derecha">
+        <span id="op1" class="opcion" onclick="controlarRespuesta(this)">7</span>
+        <span id="op2" class="opcion" onclick="controlarRespuesta(this)">7</span>
+        <span id="op3" class="opcion" onclick="controlarRespuesta(this)">7</span>
+    </div>
+</div>
+<script src="Js/resta.js"></script>
+<script type="text/javascript" src="Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
